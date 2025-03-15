@@ -1,21 +1,59 @@
-.title {
-    margin-bottom: 10px;
-    text-align: center;
-    width: 210px;
-    color:blue;
-    border: solid black 2px;
+/* Center the calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
 }
 
+/* Container to wrap the title and calculator */
+.container {
+    text-align: center;
+}
+
+/* Style the title */
+.title {
+    font-size: 36px;  /* Make it bigger */
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+    border: solid black 2px;
+    padding: 10px;
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+/* Style the calculator itself */
+table {
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 350px; /* Bigger calculator */
+}
+
+/* Style buttons */
 input[type="button"] {
     background-color: black;
     color: white;
     border: solid black 2px;
     width: 100%;
+    height: 60px; /* Bigger buttons */
+    font-size: 24px; /* Bigger text */
+    cursor: pointer;
 }
 
+/* Style the calculator display */
 input[type="text"] {
     background-color: white;
     border: solid black 2px;
     width: 100%;
-    
+    height: 60px; /* Bigger display */
+    font-size: 24px; /* Bigger numbers */
+    text-align: right;
+    padding: 10px;
 }
