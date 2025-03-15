@@ -21,19 +21,18 @@ body {
     color: blue;
     border: solid black 2px;
     padding: 10px;
-    width: 210px;
-    margin-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto 20px auto; /* Center it with space below */
 }
 
 /* Style the calculator itself */
 table {
-    border-collapse: collapse;
-    margin: 0 auto; /* Center the table */
+    margin: auto; /* Center the table */
     background-color: white;
     padding: 20px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    width: 350px; /* Bigger calculator */
+    display: inline-block; /* Prevent full width */
 }
 
 /* Style buttons */
@@ -45,6 +44,14 @@ input[type="button"] {
     height: 60px; /* Bigger buttons */
     font-size: 24px; /* Bigger text */
     cursor: pointer;
+    margin: 5px; /* Add spacing */
+}
+
+/* Make the clear button ("c") stand out */
+input[value="c"] {
+    background-color: red; /* Make c button red */
+    color: white;
+    font-weight: bold;
 }
 
 /* Style the calculator display */
